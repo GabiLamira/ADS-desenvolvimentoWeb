@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #eaeaea;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+article {
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+article h2 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+article ul {
+    margin-left: 20px;
+    padding: 0;
+    list-style-type: square;
+    font-size: 1.1em; /* Ajuste para a mesma fonte */
+}
+
+section {
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 2em; /* Mantido igual ao artigo */
+    color: #4CAF50;
+}
+
+section p {
+    font-size: 1.1em; /* Tamanho da fonte igual ao dos hobbies */
+    margin-bottom: 20px;
+}
+
+section ol {
+    margin-left: 20px; /* Para alinhar com os hobbies */
+    padding: 0;
+    font-size: 1.1em; /* Ajuste para a mesma fonte */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    margin-right: 5px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    vertical-align: middle;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1em;
+}
+
+form button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section, article {
+        padding: 20px;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}
